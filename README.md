@@ -1,5 +1,5 @@
 ## To do List
 
-<img src="https://github.com/MCTHEMAXsubway/Zodiac_Sign/blob/master/thumnail/1.png" width=600>
+<img src="https://github.com/dhdl618/TodoList/blob/master/src/img/thumnail.png" width=600>
 
-#### :ballot_box_with_check: <a href="https://mcthemaxsubway.github.io/Zodiac_Sign/zodiacsign/">GitHub Page Link</a>
+#### :ballot_box_with_check: <a href="https://dhdl618.github.io/TodoList/">GitHub Page Link</a>
