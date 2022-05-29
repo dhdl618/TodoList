@@ -1,38 +1,92 @@
-.App {
+body{
+  font-family: 'Orbitron', sans-serif;
+}
+
+.inputAndButton {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input::placeholder {
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.board {
+  margin: 50px auto 50px;
+  border: 2px solid #8eb695;
+  border-radius: 50px;
+  background: #8eb695;
+  width: 1000px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.itemList {
+  border: 0px;
+  border-radius: 15px;
+  background: #edeae3;
+  padding-top: 10px;
+  padding-left: 15px;
+  height: 70px;
+  width: 500px;
+  margin: 30px auto 50px;
+  color: #3b3b3b;
+}
+
+h1 {
+  text-align: center;
+  color: #edeae3;
+  font-size: 50px;
+}
+
+.inputBox {
+  outline: none;
+  border: 0px;
+  border-radius: 15px;
+  background: #f5ccd0;
+  margin: 50px 30px 10px;
+  height: 30px;
+  width: 300px;
+  font-size: 14px;
+  padding-left: 15px;
+}
+
+.addButton {
+  border: 0px;
+  border-radius: 15px;
+  font-size:13px;
+  height: 30px;
+  width: 50px;
+  background: #eee;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  transition: 0.15s
+}
+.addButton:hover{
+  background: #c2c2c2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.deleteAndicon{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkIcon{
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.deleteButton{
+  border: 0px;
+  border-radius: 15px;
+  font-family: 'Orbitron', sans-serif;
+  background: #8eb695;
+  height: 19px;
+  font-size: 12px;
+  color: #edeae3;
+  cursor: pointer;
+  transition: 0.15s
+}
+.deleteButton:hover{
+  background: #58745d;
 }
