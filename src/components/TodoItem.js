@@ -1,30 +1,36 @@
-import React, {useState} from 'react'
-import '../App.css';
+import React, { useState } from "react";
+import "../App.css";
 
-function TodoItem (props) {
+function TodoItem(props) {
 
-  const [checkBox, setCheckBox] = useState('❌')
+  const [deleteList, setDeleteList] = useState([]);
+  const [checkBox, setCheckBox] = useState("❌");
   const changeCheck = () => {
-    if (checkBox == '❌') {
-      setCheckBox('✔️') 
+    if (checkBox == "❌") {
+      setCheckBox("✔️");
     } else {
-      setCheckBox('❌')
+      setCheckBox("❌");
     }
+  };
+  const removeList = () => {
+      if (props.key !== props) {
+          setDeleteList(...deleteList, deleteList)
+      }
   }
-  
+
   return (
     <>
       <div className="itemList">
         {props.item}
         <div className="deleteAndicon">
-          <button className="deleteButton">Delete</button>
+          <button className="deleteButton" onClick={removeList}>Delete</button>
           <span className="checkIcon" onClick={changeCheck}>
-          {checkBox}
+            {checkBox}
           </span>
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default TodoItem
+export default TodoItem;

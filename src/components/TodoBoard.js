@@ -2,11 +2,12 @@ import React from 'react'
 import TodoItem from './TodoItem'
 import '../App.css';
 
-function TodoBoard(props) {
+function TodoBoard({list}) {
+
   return(
     <div className="board">
       <h1>Todo List</h1>
-      {props.list.map((item) => <TodoItem item={item}/>)}
+      {list.map((item, index) => <TodoItem key={index} item={item}></TodoItem>)}
     </div>
   )
 }
